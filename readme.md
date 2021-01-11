@@ -1,19 +1,26 @@
-# Python program
+# Meson-UI
 
 ## About
 
 * * *
 
-Add info about this app here.
+Meson-UI is a lightweight and developer-friendly GUI that provides
+a simplistic way to interact with the venerable Meson build system,
+it is also a cross-platform application meaning it can run on most
+common host systems.
+
+The main design goals of Meson-UI is to provide a standalone portable
+build GUI and allow the users of the Meson build system to access all
+or most of Meson build systems features with minimal effort.
 
 ## Tooling information
 
 * * *
 
-Targeted audience we are building for is Windwos 10, MacOSX and Linux users. This project uses
-[Python](https://www.python.org/) `3.8.x` and newer.
+Targeted audience we are building for is Windwos 10, MacOSX and Linux
+users. This project uses [Python](https://www.python.org/) `3.8.x` and newer.
 
-## Setup, Compile and Install
+## Test, Install and Run
 
 * * *
 
@@ -33,7 +40,7 @@ python3 setup.py install
 And finally we run this cool application:
 
 ```console
-prog
+meson-ui
 ```
 
 ## Contact the developer
