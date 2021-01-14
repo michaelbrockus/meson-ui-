@@ -19,6 +19,8 @@ if __name__ == '__main__':
             'code'
         ],
         python_requires='>=3.8',
+        install_requires=['meson', 'ninja', 'PyQt5'],
+        setup_requires=['pytest-runner'],
         entry_points={
             'console_scripts': [
                 'meson-ui=code.main:main_prog',
