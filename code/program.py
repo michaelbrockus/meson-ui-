@@ -13,7 +13,7 @@ class MesonUi(QApplication):
         super(self.__class__, self).__init__(sys_argv)
 
     def boot(self):
-        pass
+        self.activity = None
 
 
 def greet():

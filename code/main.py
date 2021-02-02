@@ -5,7 +5,10 @@
 # author: Michael Brockus
 # gmail: <michaelbrockus@gmail.com>
 #
-from .program import greet
+from .program import MesonUi
+import sys
 
 def main_prog():
-    print(greet())
+    app: MesonUi = MesonUi(sys_argv=sys.argv)
+    app.boot()
+    sys.exit(app.exec_())
