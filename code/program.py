@@ -6,6 +6,7 @@
 # gmail: <michaelbrockus@gmail.com>
 #
 from PyQt5.QtWidgets import QApplication
+from .activitys.main import ViewMain
 
 
 class MesonUi(QApplication):
@@ -13,7 +14,7 @@ class MesonUi(QApplication):
         super(self.__class__, self).__init__(sys_argv)
 
     def boot(self):
-        self.activity = None
+        self.activity = ViewMain()
 
 
 def greet():
