@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Meson-UI</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -26,15 +26,48 @@
     <property name="title">
      <string>   CONSOLE:</string>
     </property>
-    <widget class="QPlainTextEdit" name="plainTextEdit">
+    <widget class="QPlainTextEdit" name="console">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>40</y>
        <width>781</width>
        <height>141</height>
       </rect>
      </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>0</y>
+       <width>701</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="push_configure">
+        <property name="text">
+         <string>Configure</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="push_subprojects">
+        <property name="text">
+         <string>Subprojects</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="push_version">
+        <property name="text">
+         <string>Version</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
@@ -43,7 +76,7 @@
       <x>0</x>
       <y>120</y>
       <width>801</width>
-      <height>221</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="title">
@@ -53,99 +86,124 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>10</y>
+       <y>30</y>
        <width>801</width>
-       <height>211</height>
+       <height>201</height>
       </rect>
      </property>
      <property name="currentIndex">
       <number>0</number>
      </property>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="tab_core_opt">
       <attribute name="title">
-       <string>Tab 1</string>
+       <string>Core Options</string>
       </attribute>
+      <widget class="QListView" name="list_core">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>0</y>
+         <width>791</width>
+         <height>161</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
-     <widget class="QWidget" name="tab_2">
+     <widget class="QWidget" name="tab_base_opt">
       <attribute name="title">
-       <string>Tab 2</string>
+       <string>Base Options</string>
       </attribute>
+      <widget class="QListView" name="list_base">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>0</y>
+         <width>791</width>
+         <height>161</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_meson_info">
+      <attribute name="title">
+       <string>Meson Info</string>
+      </attribute>
+      <widget class="QListView" name="list_meson">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>0</y>
+         <width>791</width>
+         <height>161</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_prog_info">
+      <attribute name="title">
+       <string>Project Info</string>
+      </attribute>
+      <widget class="QListView" name="list_project">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>0</y>
+         <width>791</width>
+         <height>161</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_test_info">
+      <attribute name="title">
+       <string>Tests Info</string>
+      </attribute>
+      <widget class="QListView" name="list_tests">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>0</y>
+         <width>791</width>
+         <height>161</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>340</y>
-      <width>801</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
-     <item>
-      <widget class="QPushButton" name="pushButton_11">
-       <property name="text">
-        <string>WrapDB</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_12">
-       <property name="text">
-        <string>Subprojects</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_10">
-       <property name="text">
-        <string>Version</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
+      <x>10</x>
       <y>90</y>
-      <width>801</width>
+      <width>781</width>
       <height>32</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="push_init">
        <property name="text">
         <string>Init</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="push_setup">
        <property name="text">
         <string>Setup</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="push_compile">
        <property name="text">
         <string>Compile</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_5">
-       <property name="text">
-        <string>Configure</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="push_test">
        <property name="text">
         <string>Test</string>
        </property>
@@ -153,7 +211,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -164,25 +222,25 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="label_sourcedir">
        <property name="text">
         <string>SourceDir:</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="edit_sourcedir"/>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="push_open">
        <property name="text">
-        <string>PushButton</string>
+        <string>Open</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -193,19 +251,19 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="label_builddir">
        <property name="text">
-        <string>BuildDir:</string>
+        <string>BuildDir:   </string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="edit_builddir"/>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="push_clear">
        <property name="text">
-        <string>PushButton</string>
+        <string>Clear</string>
        </property>
       </widget>
      </item>
